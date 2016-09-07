@@ -1,0 +1,3 @@
+# Test9_StartActivity
+>SecondActivity返回时会多加一句finish()方法，即返回第一个界面时结束SecondActivity的运行。<br>
+>若是直接用intent在两个界面之间跳转，但是实际上是跳转到新创建的界面，按返回键就能知道自己到底创建了几个MainActivity，明显是占用资源的，可以在manifest中的主activity属性下添加android:launchMode="singleTask"，即可实现跳转返回相同唯一一个界面。
